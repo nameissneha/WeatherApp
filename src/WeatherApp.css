@@ -1,0 +1,102 @@
+/* General Styles */
+.weather-container {
+    text-align: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    transition: background 0.5s ease-in-out;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Light Mode */
+  .weather-container.light-mode {
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    color: #333;
+  }
+  
+  /* Dark Mode */
+  .weather-container.dark-mode {
+    background: linear-gradient(to bottom, #1e1e1e, #2c2c2c);
+    color: white;
+  }
+  
+  /* Toggle Mode Button */
+  .toggle-mode {
+    margin: 10px;
+    padding: 10px 15px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .toggle-mode:hover {
+    background: #ffaa00;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    outline: none;
+  }
+  
+  .search-box button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Weather Layout */
+  .weather-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Main Weather Card */
+  .weather-main {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Extra Weather Details */
+  .weather-extra {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  
